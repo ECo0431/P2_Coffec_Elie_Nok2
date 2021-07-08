@@ -78,6 +78,7 @@ header,
 header nav,
 header nav ul,
 form,
+aside form .button,
 aside nav ul,
 aside nav ul li,
 aside nav ul li a,
@@ -154,10 +155,12 @@ aside form #field{
     border: 2px solid #F2F2F2;
 }
 
-aside form button{
+aside form .button{
     height: 51px;
     width: 134px;
     border-radius: 0px 16px 16px 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 aside nav{
@@ -326,11 +329,12 @@ footer{
         width: 565px;
     }
 
-    aside form button{
+    aside form .button{
         border-radius: 16px;
+        display: flex;
     }
 
-    aside form button .disappearSearch{
+    aside form .button .disappearSearch{
         display: none;
     }
 
@@ -423,13 +427,13 @@ footer{
         margin: 0px 0px 21px 0px;
     }
 
-    aside form button .disappearMagnifying{
+    aside form .button .disappearMagnifying{
         display: none;
     }
 }
 @media screen and (min-width: 1090px) and (max-width: 9999999999px){
 
-    aside form button .disappearMagnifying{
+    aside form .button .disappearMagnifying{
         display: none;
     }
 
