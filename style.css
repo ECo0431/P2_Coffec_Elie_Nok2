@@ -1,22 +1,16 @@
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('/sources/typo/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'Raleway-SemiBold';
     src: url('/sources/typo/Raleway-SemiBold.ttf');
-    font-weight: normal;
-    font-style: 600;
 }
 
 @font-face {
     font-family: 'Raleway-Bold';
     src: url('/sources/typo/Raleway-Bold.ttf');
-    font-weight: normal;
-    font-style: bold;
 }
 
 .regular{
@@ -213,6 +207,17 @@ aside nav ul li a .round .image{
 
 aside nav ul li a .txtButon{
     margin-right: 24px;
+}
+
+aside .boxInfo{
+    display: flex;
+    margin-top: 30px;
+}
+
+aside .pictoInfo {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 0px; 
 }
 
 footer{
