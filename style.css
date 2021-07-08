@@ -83,7 +83,16 @@
     border: none;
 }
 
-body, header,header nav, ul, form{
+body,
+header,
+header nav,
+header nav ul,
+form,
+aside nav ul,
+aside nav ul li,
+aside nav ul li a,
+aside nav ul li a .round
+{
     display: flex;
 }
 
@@ -128,10 +137,6 @@ main{
     padding: 0px 0px 0px 56px;
 }
 
-aside{
-    background-color: tomato;
-}
-
 aside h1{
     word-spacing: 3.6px;
 }
@@ -165,13 +170,49 @@ aside form button{
 }
 
 aside nav{
-    background-color: thistle;
-    height: 50px;
     margin: 30px 0px 0px 0px;
 }
 
+aside nav ul{
+    height: 100%;
+}
+
+aside nav ul li{
+    margin: 0px 21px 0px 7px;
+    height: 50px;
+}
+
+aside nav ul li .border{
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+}
+
+aside nav ul li a, aside nav ul li a .round{
+    border-radius: 50px;
+    height: 50px;
+}
+
 aside nav ul li a{
-    background-color: yellow;
+    font-size: 1.1em;
+    align-items: center;
+}
+
+aside nav ul li a .round{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+    border: 2px solid #DEEBFF;
+}
+
+aside nav ul li a .round .image{
+    width: 18px;
+    height: 18px;
+}
+
+aside nav ul li a .txtButon{
+    margin-right: 24px;
 }
 
 footer{
