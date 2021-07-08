@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('/sources/typo/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('/sources/typo/Raleway-SemiBold.ttf');
+    font-weight: normal;
+    font-style: 600;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('/sources/typo/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-style: bold;
+}
+
+.regular{
+    font-family: 'Raleway-Regular';
+}
+
+.semiBold{
+    font-family: 'Raleway-SemiBold';
+}
+
+.bold{
+    font-family: 'Raleway-Bold';
+}
+
+.fontSize1em{
+    font-size: 1em;
+}
+
+.bcBlue{
+    background-color: #0065FC;
+}
+
+.bcLightBlue{
+    background-color: #DEEBFF;;
+}
+
+.bcLightGray{
+    color: #F2F2F2;
+}
+
+.colBlue{
+    color: #0065FC;
+}
+
+.colLightBlue{
+    color: #DEEBFF;
+}
+
+.colLightGray{
+    color: #F2F2F2;
+}
+
+.colBlack{
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+
+body, header, nav, ul{
+    display: flex;
+}
+
+body{
+    background-color: yellow;
+    flex-direction: column;
+    padding: 0px 26px 0px 26px;
+}
+
+header{
+    background-color: thistle;
+    height: 130px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#logo{
+    width: 94px;
+    height: 29px;
+    margin-left: 55px;
+}
+
+nav{
+    background-color: yellow;
+    height: 100%;
+}
+
+ul{
+    background-color: chartreuse;
+}
+
+li{
+    background-color: blueviolet;
+    margin: 0px 4px 0px 4px;
+}
+
+a{
+    padding: 10px 28px 10px 28px;
+    background-color: tomato;
+}
+
+.line, .lineHidden{
+    height: 2px;
+    margin: 0px 0px 46px 0px;
+}
+
+main{
+    background-color: darkgrey;
+    height: 500px;
+}
+
+footer{
+    background-color: darkslategrey;
+    height: 500px
+}
+
+.plan
+{
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+    top: 0;
+}
