@@ -25,10 +25,6 @@
     font-family: 'Raleway-Bold';
 }
 
-.fontSize1em{
-    font-size: 1em;
-}
-
 .fonSize1_1em{
     font-size: 1.1em;
 }
@@ -96,7 +92,6 @@ body{
 }
 
 header{
-    height: 127px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -105,11 +100,13 @@ header{
 #logo{
     width: 94px;
     height: 29px;
-    margin-left: 55px;
+    margin: 50px 0px 48px 55px;
 }
 
 header nav{
     height: 100%;
+    margin-bottom: 60px;
+    font-size: 1em;
 }
 
 header nav ul li{
@@ -126,7 +123,6 @@ header nav ul li a{
 }
 
 main{
-    background-color: darkgrey;
     height: 500px;
     padding: 0px 0px 0px 56px;
 }
@@ -169,6 +165,7 @@ aside nav{
 
 aside nav ul{
     height: 100%;
+    flex-wrap: wrap;
 }
 
 aside nav ul li{
@@ -231,4 +228,117 @@ footer{
     opacity: 0.2;
     width: 100%;
     top: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 624px){
+
+    main{
+        padding: 0;
+    }
+
+    #filtres{
+        position: absolute;
+        top: 288px;
+    }
+
+    aside form{
+        width: 100%;
+        margin: 11px 0px 0px 0px;
+        border-radius: 16px;
+        align-items: center;
+    }
+
+    aside form #field{
+        height: 51px;
+        width: 480px;
+    }
+
+    aside form button{
+        border-radius: 16px;
+    }
+
+    aside form button .disappearSearch{
+        display: none;
+    }
+
+    .pictoMagnifying{
+        width: 20px;
+    }
+
+    aside nav{
+        margin-top: 60px;
+    }
+
+    aside nav ul{
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    aside nav ul li {
+        margin: 0px 0px 21px 0px;
+    }
+
+}
+
+@media screen and (min-width: 625px) and (max-width: 1089px){
+
+    main{
+        padding: 0;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav{
+        margin:  60px 0px 40px 0px;
+        font-size: 1.2em;
+    }
+
+    header .line, header .lineHidden{
+        display: none;
+    }
+
+    header .lineTablet{
+        height: 2px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    #logo{
+        margin: 40px 0px 0px 0px;
+        width: 188px;
+        height: 58px;
+    }
+
+    #filtres{
+        position: absolute;
+        top: 370px;
+    }
+
+    aside nav{
+        margin-top: 60px;
+    }
+
+    aside nav ul{
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    aside nav ul li {
+        margin: 0px 0px 21px 0px;
+    }
+
+    aside form button .disappearMagnifying{
+        display: none;
+    }
+}
+@media screen and (min-width: 1090px) and (max-width: 9999999999px){
+
+    aside form button .disappearMagnifying{
+        display: none;
+    }
+
 }

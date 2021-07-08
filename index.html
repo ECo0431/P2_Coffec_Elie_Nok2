@@ -9,21 +9,24 @@
 </head>
 <body> 
     <header>
-        <img alt="plan" class="plan" src="/sources/plan.png">
+       <!--<img alt="plan" class="plan" src="/sources/plan.png">-->
         <img alt="logo reservia" id="logo" src="/sources/images/logo_et_picto/logo.png">
-        <nav class= "fontSize1em">
+        <nav>
             <ul>
                 <li>
                     <div class="line bcBlue"></div>
                     <a class="regular colBlue" href="">Hébergements</a>
+                    <div class="lineTablet bcBlue"></div>
                 </li>
                 <li>
                     <div class="lineHidden"></div>
                     <a class="regular colBlack" href="">Activités</a>
+                    <div class="lineTabletHidden"></div>
                 </li>
                 <li>
                     <div class="lineHidden"></div>
-                    <a class="bold colBlue" href="">S'inscrire</a>
+                    <a  id="sinscrire" class="bold colBlue" href="">S'inscrire</a>
+                    <div class="lineTabletHidden"></div>
                 </li>
             </ul>
         </nav>
@@ -40,13 +43,14 @@
                 <img class="pictogram" alt="pictogramme position carte" src="/sources/images/logo_et_picto/picto_carte.png">
                 <input id="field" type="text" value=""/>
                 <button class="bcBlue colWhite semiBold fonSize1_1em">
-                    Rechercher
+                    <div class="disappearSearch">Rechercher</div>
+                    <img class="pictoMagnifying disappearMagnifying" alt="pictogramme loupe" src="sources/images/logo_et_picto/picto_loupe.png">
                 </button>
             </form>
             <nav>
                 <ul>
                     <li>
-                        <a class="bold colBlack" href="">
+                        <a id="filtres" class="bold colBlack" href="">
                             Filtres
                         </a>
                     </li>
