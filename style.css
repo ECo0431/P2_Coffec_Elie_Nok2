@@ -219,7 +219,6 @@ aside .pictoInfo {
 }
 
 footer{
-    background-color: darkslategrey;
     height: 500px
 }
 
@@ -233,13 +232,86 @@ footer{
 
 @media screen and (min-width: 0px) and (max-width: 624px){
 
-    main{
-        padding: 0;
+    body{
+        padding: 0px;
     }
+
+    main{
+        padding: 20px;
+    }
+
+    header .line, header .lineHidden{
+        display: none;
+    }
+
+    header .lineSmartphone{
+        height: 2px;
+        width: 187.5px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    header .lineSmartphoneLightGray{
+        height: 2px;
+        width: 187.5px;
+        margin: 15px 0px 0px 0px;
+        background-color: #F2F2F2;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    header nav{
+        margin:  60px 0px 0px 0px;
+        width: 100%;
+    }
+
+    header nav ul{
+        width: 100%;
+    }
+
+    header nav ul li{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+        margin: 0px;
+    }
+
+    header nav ul li a{
+        margin: 0px;
+    }
+
+    header nav ul li .colBlue{
+        padding-left: 38px;
+    }
+
+    header nav ul li .colBlack{
+        padding-left: 60px;
+    }
+
+    #logo{
+        margin: 40px 0px 0px 15px;
+    }
+
+    #sinscrire{
+        position: absolute;
+        top: 37px;
+        right: 0px;
+    }
+    
 
     #filtres{
         position: absolute;
-        top: 288px;
+        top: 368px;
+        left: 24px;
     }
 
     aside form{
@@ -251,7 +323,7 @@ footer{
 
     aside form #field{
         height: 51px;
-        width: 480px;
+        width: 565px;
     }
 
     aside form button{
@@ -273,11 +345,30 @@ footer{
     aside nav ul{
         height: 100%;
         flex-wrap: wrap;
-        justify-content: space-around;
+    }
+
+    aside nav ul li a{
+        font-size: 1em;
     }
 
     aside nav ul li {
-        margin: 0px 0px 21px 0px;
+        margin: 0px 21px 21px 0px;
+    }
+
+    aside nav ul li a .txtButon{
+        margin-right: 8px;
+    }
+
+    aside nav ul li a .round{
+        margin: 0px 4px 0px 0px;
+    }
+
+    #eco{
+        margin-left: -21px;
+    }
+
+    aside .boxInfo p{
+        line-height: 25px;
     }
 
 }
