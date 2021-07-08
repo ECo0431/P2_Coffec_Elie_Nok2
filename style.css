@@ -151,6 +151,7 @@ aside form .pictogram{
 aside form #field{
     height: 51px;
     width: 234px;
+    border: 2px solid #F2F2F2;
 }
 
 aside form button{
