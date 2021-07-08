@@ -35,6 +35,14 @@
     font-size: 1em;
 }
 
+.fonSize1_1em{
+    font-size: 1.1em;
+}
+
+.fontSize1_3em{
+    font-size: 1.3em;
+}
+
 .bcBlue{
     background-color: #0065FC;
 }
@@ -44,7 +52,7 @@
 }
 
 .bcLightGray{
-    color: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 .colBlue{
@@ -63,6 +71,10 @@
     color: black;
 }
 
+.colWhite{
+    color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -71,19 +83,17 @@
     border: none;
 }
 
-body, header, nav, ul{
+body, header,header nav, ul, form{
     display: flex;
 }
 
 body{
-    background-color: yellow;
     flex-direction: column;
     padding: 0px 26px 0px 26px;
 }
 
 header{
-    background-color: thistle;
-    height: 130px;
+    height: 127px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -95,33 +105,73 @@ header{
     margin-left: 55px;
 }
 
-nav{
-    background-color: yellow;
+header nav{
     height: 100%;
 }
 
-ul{
-    background-color: chartreuse;
-}
-
-li{
-    background-color: blueviolet;
+header nav ul li{
     margin: 0px 4px 0px 4px;
 }
 
-a{
-    padding: 10px 28px 10px 28px;
-    background-color: tomato;
-}
-
-.line, .lineHidden{
+header .line, .lineHidden{
     height: 2px;
     margin: 0px 0px 46px 0px;
+}
+
+header nav ul li a{
+    padding: 10px 28px 10px 28px;
 }
 
 main{
     background-color: darkgrey;
     height: 500px;
+    padding: 0px 0px 0px 56px;
+}
+
+aside{
+    background-color: tomato;
+}
+
+aside h1{
+    word-spacing: 3.6px;
+}
+
+aside p{
+    line-height: 36px;
+}
+
+aside form{
+    width: 418px;
+    margin: 11px 0px 0px 0px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+aside form .pictogram{
+    height: 19px;
+    width: 21px;
+    margin: 0px 16px 0px 13px;
+}
+
+aside form #field{
+    height: 51px;
+    width: 234px;
+}
+
+aside form button{
+    height: 51px;
+    width: 134px;
+    border-radius: 0px 16px 16px 0px;
+}
+
+aside nav{
+    background-color: thistle;
+    height: 50px;
+    margin: 30px 0px 0px 0px;
+}
+
+aside nav ul li a{
+    background-color: yellow;
 }
 
 footer{
